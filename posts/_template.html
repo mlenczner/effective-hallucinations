@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POST TITLE &mdash; Effective Hallucinations</title>
+  <meta name="description" content="POST DESCRIPTION (1-2 sentences for social sharing)">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="site-title" href="/">Effective <span>Hallucinations</span></a>
+    <p class="site-tagline">Conversations with AI about nonprofits, philanthropy, and the social sector.</p>
+    <nav>
+      <a href="/">Posts</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="/">&larr; Back</a>
+
+    <div class="post-header">
+      <p class="post-meta">MONTH DAY, YEAR</p>
+      <h1>POST TITLE</h1>
+      <p class="post-intro">
+        Optional 1-2 sentence intro / framing for the conversation.
+        Why did you have it? What were you trying to figure out?
+      </p>
+    </div>
+
+    <div class="conversation">
+
+      <!-- Copy this block for each human turn -->
+      <div class="turn">
+        <div class="turn-speaker human">Mike</div>
+        <div class="turn-content">
+          <p>Your message.</p>
+        </div>
+      </div>
+
+      <!-- Copy this block for each Claude turn -->
+      <div class="turn">
+        <div class="turn-speaker claude">Claude</div>
+        <div class="turn-content">
+          <p>Claude's response. Use multiple &lt;p&gt; tags for paragraphs.</p>
+          <p>Second paragraph.</p>
+          <!-- For lists: -->
+          <ul>
+            <li>Item one</li>
+            <li>Item two</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Effective Hallucinations &mdash; <a href="mailto:mlenczner@gmail.com" style="color:inherit">Mike Lenczner</a></p>
+  </footer>
+
+</body>
+</html>
+
+<!--
+HOW TO PUBLISH A NEW POST:
+1. Copy this file to posts/your-post-slug.html
+2. Fill in POST TITLE, POST DESCRIPTION, date, and conversation turns
+3. Add an entry to index.html (copy an existing <li> block, update title/date/excerpt/link)
+4. git add . && git commit -m "Add: your post title" && git push
+   → Netlify auto-deploys in ~30 seconds
+-->
