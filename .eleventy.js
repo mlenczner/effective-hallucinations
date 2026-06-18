@@ -48,9 +48,10 @@ module.exports = function(eleventyConfig) {
 
     function closeTurn() {
       if (currentSpeaker) {
-        output.push(`<div class="turn">`);
-        output.push(`<div class="turn-speaker ${currentSpeaker.toLowerCase()}">${currentSpeaker}</div>`);
-        output.push(`<div class="turn-content">`);
+        const speakerClass = currentSpeaker.toLowerCase() + '-turn';
+        output.push(`<div class="turn ${speakerClass}">`);
+        output.push(`<div class="turn-speaker">${currentSpeaker}</div>`);
+        output.push(`<div class="turn-bubble">`);
         output.push(...turnLines);
         output.push(`</div></div>`);
         turnLines = [];
