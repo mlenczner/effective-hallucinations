@@ -7,7 +7,7 @@
   <meta name="description" content="{{ description or 'Michael Lenczner — technology, data, and social change.' }}">
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="{{ bodyClass or '' }}">
 <script>
 (function() {
   if (sessionStorage.getItem('auth') !== 'yes') {
@@ -26,6 +26,7 @@
     <nav>
       <a href="/">Home</a>
       <a href="/AIblog/">Effective Hallucinations</a>
+      <a href="/about/">About</a>
     </nav>
   </header>
 

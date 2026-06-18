@@ -271,6 +271,29 @@ main {
   color: var(--muted);
 }
 
+/* ── AIblog blue theme ── */
+
+body.aiblog {
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+}
+
+body.aiblog .site-title { color: #2563eb; }
+
+body.aiblog nav a:hover { color: #2563eb; }
+
+body.aiblog .aiblog-title span { color: #2563eb; }
+
+body.aiblog .turn-speaker.claude { color: #2563eb; }
+
+body.aiblog .prose a { color: #2563eb; }
+
+body.aiblog .turn-content a { color: #2563eb; }
+
+body.aiblog .post-list h2 a:hover { color: #2563eb; }
+
+body.aiblog .back-link:hover { color: #2563eb; }
+
 /* ── Responsive ── */
 
 @media (max-width: 540px) {

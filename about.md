@@ -18,4 +18,4 @@ Welcome. Mike will add a word about himself below when he gets around to it.
 
 ## About Mike
 
-I'm Mike Lenczner. [Add a line or two about yourself here.]
+Michael Lenczner has spent two decades at the intersection of technology and social change — founding initiatives in the community wireless and open data movements, and working across governments, funders, and nonprofits. He is the founder and CEO of DARO, a consulting firm that helps mission-driven organizations navigate change and have impact. He is also a School Fellow at Carleton University's School of Public Policy and Administration.
