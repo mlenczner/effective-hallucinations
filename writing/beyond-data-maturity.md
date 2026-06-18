@@ -4,7 +4,6 @@ date: 2026-06-10
 description: "Why the nonprofit sector should retire 'data maturity' and adopt 'adaptive capacity' as its organizing frame for data and learning."
 layout: layouts/post.njk
 draft: false
-permalink: false
 ---
 
 "Data maturity" is everywhere in the sector now. Frameworks, assessments, consultants, funder requirements — all organized around the idea that organizations move through stages of data sophistication toward some mature, fully realized state. The image is of ripening: you're underripe now, but with enough investment and effort, you'll get there.

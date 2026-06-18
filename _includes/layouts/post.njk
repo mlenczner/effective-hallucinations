@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-<a class="back-link" href="/">&larr; Back</a>
+<a class="back-link" href="{{ backLink or '/' }}">&larr; Back</a>
 
 <div class="post-header">
   <p class="post-meta">{{ date | readableDate }}</p>

@@ -3,6 +3,16 @@ module.exports = function(eleventyConfig) {
   // Pass CSS through to output
   eleventyConfig.addPassthroughCopy("css");
 
+  // Ignore housekeeping files
+  eleventyConfig.ignores.add("SETUP.md");
+  eleventyConfig.ignores.add("README.md");
+
+  // Don't build draft posts at all
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    permalink: data => data.draft ? false : data.permalink,
+    eleventyExcludeFromCollections: data => data.draft === true
+  });
+
   // Date filter
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("en-US", {
@@ -10,18 +20,19 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  // Filter out draft posts in production
-  eleventyConfig.addCollection("posts", function(collectionApi) {
+  // Writing posts (Michael's writing)
+  eleventyConfig.addCollection("writing", function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob("posts/*.md")
+      .getFilteredByGlob("writing/*.md")
       .filter(post => !post.data.draft)
       .sort((a, b) => b.date - a.date);
   });
 
-  // All posts including drafts (for local preview)
-  eleventyConfig.addCollection("allPosts", function(collectionApi) {
+  // Effective Hallucinations AI blog posts
+  eleventyConfig.addCollection("aiblog", function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob("posts/*.md")
+      .getFilteredByGlob("AIblog/*.md")
+      .filter(post => !post.data.draft)
       .sort((a, b) => b.date - a.date);
   });
 

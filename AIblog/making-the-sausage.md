@@ -4,8 +4,8 @@ date: 2026-06-10
 description: "A conversation about adaptive capacity, the principal-agent problem, Zuckerberg's education bets, and why the nonprofit accountability problem doesn't have a clean answer."
 intro: "I was helping a colleague named Allie develop some ideas about data and the nonprofit sector. What started as a writing task turned into something more interesting."
 layout: layouts/post.njk
+backLink: /AIblog/
 draft: false
-permalink: false
 ---
 
 **Mike:** Write two blog posts for Allie — one on a new term and how it's better than "data maturity," and the other on the background of adaptive capacity, the principal-agent problem, and the resource dependency trap.
@@ -23,10 +23,6 @@ The principal-agent problem (economics, 1970s): the funder hires the nonprofit t
 The second one you're half-remembering is resource dependence theory (Pfeffer & Salancik, *The External Control of Organizations*, 1978) — organizations get shaped by whoever controls the resources they need to survive. That's the "tied to a particular revenue source" piece. Because nonprofit revenue comes from funders rather than the people served, the org optimizes for what funders reward. The specific failure mode is the nonprofit starvation cycle: funders won't pay overhead → orgs underinvest in capacity → underreport it to look lean → expectations ratchet down.
 
 So your ChatGPT diagnosis and Allie's framing line up cleanly. Post 2 already names both, cites the origins, and ties them together to explain why the sector can't just "mature" its way out — the data practices are downstream of the funding structure.
-
-**Mike:** Use whatever terms you think.
-
-**Claude:** The drafts use my best judgment: "principal-agent problem," "resource dependence theory," and "nonprofit starvation cycle" for the specific failure mode. Those are the standard, citable labels.
 
 **Mike:** Can you find any really thoughtful pieces written about the impact on the nonprofit sector — or the education sector — of the Zuckerberg-funded intervention into education?
 

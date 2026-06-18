@@ -3,18 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About &mdash; Effective Hallucinations</title>
+  <title>About &mdash; Michael Lenczner</title>
   <meta name="description" content="About Effective Hallucinations.">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+<script>
+(function() {
+  if (sessionStorage.getItem('auth') !== 'yes') {
+    var pwd = prompt('Password:');
+    if (pwd !== 'canada') {
+      document.body.innerHTML = '<p style="font-family:sans-serif;padding:2rem;">Access denied.</p>';
+      return;
+    }
+    sessionStorage.setItem('auth', 'yes');
+  }
+})();
+</script>
 
   <header class="site-header">
-    <a class="site-title" href="/">Effective <span>Hallucinations</span></a>
-    <p class="site-tagline">Conversations with AI about nonprofits, philanthropy, and the social sector.</p>
+    <a class="site-title" href="/">Michael Lenczner</a>
     <nav>
-      <a href="/">Posts</a>
-      <a href="/about/">About</a>
+      <a href="/">Home</a>
+      <a href="/AIblog/">Effective Hallucinations</a>
     </nav>
   </header>
 
@@ -42,7 +53,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>Effective Hallucinations &mdash; <a href="mailto:mlenczner@gmail.com" style="color:inherit">Mike Lenczner</a></p>
+    <p>Michael Lenczner &mdash; <a href="mailto:mlenczner@gmail.com" style="color:inherit">mlenczner@gmail.com</a></p>
   </footer>
 
 </body>

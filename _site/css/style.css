@@ -196,6 +196,81 @@ main {
 
 .back-link:hover { color: var(--text); }
 
+/* ── Home page ── */
+
+.home-bio {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-bio p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.home-links {
+  margin-top: 1rem;
+}
+
+.home-links a {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+.home-links a:hover { text-decoration: underline; }
+
+.home-section { margin-top: 0; }
+
+.section-heading {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.post-list h3 {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.post-list h3 a { color: var(--text); text-decoration: none; }
+.post-list h3 a:hover { color: var(--accent); }
+
+/* ── AIblog index ── */
+
+.aiblog-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.aiblog-title {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.aiblog-title span { color: var(--accent); }
+
+.aiblog-tagline {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 540px) {

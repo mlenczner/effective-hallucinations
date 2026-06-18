@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+title: "Effective Hallucinations"
+permalink: /AIblog/
+---
+
+<div class="aiblog-header">
+  <h1 class="aiblog-title">Effective <span>Hallucinations</span></h1>
+  <p class="aiblog-tagline">Conversations with AI about nonprofits, philanthropy, and the social sector.</p>
+</div>
+
+<ul class="post-list">
+  {% for post in collections.aiblog %}
+  <li>
+    <p class="post-meta">{{ post.date | readableDate }}</p>
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    {% if post.data.description %}<p class="post-excerpt">{{ post.data.description }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
