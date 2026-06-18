@@ -1,0 +1,27 @@
+
+> effective-hallucinations@1.0.0 build
+> eleventy
+
+[11ty] Writing _site/SETUP/index.html from ./SETUP.md (njk)
+[11ty] Writing _site/index.html from ./index.njk
+[11ty] Writing _site/posts/adaptive-capacity-and-why-there-is-no-solution/index.html from ./posts/adaptive-capacity-and-why-there-is-no-solution.md (njk)
+[11ty] Writing _site/posts/beyond-data-maturity/index.html from ./posts/beyond-data-maturity.md (njk)
+[11ty] Writing _site/posts/no-solution-only-honest-mitigation/index.html from ./posts/no-solution-only-honest-mitigation.md (njk)
+[11ty] Writing _site/posts/where-adaptive-capacity-comes-from/index.html from ./posts/where-adaptive-capacity-comes-from.md (njk)
+[11ty] Writing _site/about/index.html from ./about.md (njk)
+[11ty] Benchmark     23ms  31%     6× (Configuration) "readableDate" Nunjucks Filter
+[11ty] Copied 1 file / Wrote 7 files in 0.07 seconds (v2.0.1)
+exit
+f
+> effective-hallucinations@1.0.0 build
+> eleventy
+
+[11ty] Writing _site/SETUP/index.html from ./SETUP.md (njk)
+[11ty] Writing _site/index.html from ./index.njk
+[11ty] Writing _site/posts/adaptive-capacity-and-why-there-is-no-solution/index.html from ./posts/adaptive-capacity-and-why-there-is-no-solution.md (njk)
+[11ty] Writing _site/posts/beyond-data-maturity/index.html from ./posts/beyond-data-maturity.md (njk)
+[11ty] Writing _site/posts/no-solution-only-honest-mitigation/index.html from ./posts/no-solution-only-honest-mitigation.md (njk)
+[11ty] Writing _site/posts/where-adaptive-capacity-comes-from/index.html from ./posts/where-adaptive-capacity-comes-from.md (njk)
+[11ty] Writing _site/about/index.html from ./about.md (njk)
+[11ty] Benchmark     23ms  31%     6× (Configuration) "readableDate" Nunjucks Filter
+[11ty] Copied 1 file / Wrote 7 files in 0.07 seconds (v2.0.1)cd ~/Desktop/effective-hallucinations && npx @11ty/eleventy

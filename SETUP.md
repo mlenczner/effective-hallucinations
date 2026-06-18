@@ -1,3 +1,6 @@
+---
+permalink: false
+---
 # Getting effectivehallucinations.com live
 
 ## Step 1 — Create a GitHub repo
@@ -16,7 +19,7 @@ git init
 git add .
 git commit -m "Initial site"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/effective-hallucinations.git
+git remote add origin https://github.com/mlenczner/effective-hallucinations.git
 git push -u origin main
 ```
 
@@ -28,33 +31,23 @@ git push -u origin main
 4. Leave all build settings blank (this is a plain HTML site)
 5. Click **Deploy site**
 
-Your site will be live at a random `*.netlify.app` URL in about 30 seconds.
-
 ## Step 3 — Connect your domain
 
 1. In Netlify: go to **Site configuration** → **Domain management** → **Add a domain**
 2. Enter `effectivehallucinations.com` → **Verify**
-3. Netlify will give you nameservers (e.g. `dns1.p01.nsone.net`)
+3. Netlify will give you nameservers
 4. Go to wherever you bought the domain → find **Nameservers** or **DNS settings**
 5. Replace the existing nameservers with Netlify's
 6. Wait 10–30 minutes for DNS to propagate
 
-Netlify handles SSL automatically once DNS is live.
-
 ## Step 4 — Publishing new posts
 
-1. Copy `posts/_template.html` to `posts/your-slug.html`
-2. Fill in the title, date, and conversation turns
-3. Add an entry to `index.html` (copy an existing `<li>` block)
-4. Run:
+1. Write your post as a `.md` file in `posts/`
+2. Set `draft: false` in the front matter when ready to publish
+3. Run:
    ```bash
    git add .
    git commit -m "Add: your post title"
    git push
    ```
-5. Netlify auto-deploys in ~30 seconds — done.
-
----
-
-That's it. No build step, no dependencies, no monthly fees beyond the domain (~$12/year).
-
+4. Netlify auto-deploys in ~30 seconds.

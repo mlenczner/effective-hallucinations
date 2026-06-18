@@ -4,6 +4,7 @@ date: 2026-06-10
 description: "The structural problems facing nonprofit accountability don't have clean solutions. The honest move is to stop pretending they do — and work carefully within the constraint."
 layout: layouts/post.njk
 draft: true
+permalink: false
 ---
 
 The previous two posts named the problem. This one refuses to pretend there's a clean answer — and argues that refusal is more useful than the standard listicle of solutions nobody believes.

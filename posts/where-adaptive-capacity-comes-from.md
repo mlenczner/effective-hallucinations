@@ -4,6 +4,7 @@ date: 2026-06-10
 description: "Two structural problems — the principal-agent problem and resource dependence — explain why nonprofits struggle to build adaptive capacity, and why data practices alone can't fix it."
 layout: layouts/post.njk
 draft: true
+permalink: false
 ---
 
 If adaptive capacity is the goal, why is it so hard to build? Two concepts from outside the sector — the principal-agent problem and resource dependence theory — explain most of it.

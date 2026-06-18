@@ -1,0 +1,51 @@
+<h1>Getting effectivehallucinations.com live</h1>
+<h2>Step 1 — Create a GitHub repo</h2>
+<ol>
+<li>Go to github.com → click <strong>+</strong> → <strong>New repository</strong></li>
+<li>Name it <code>effective-hallucinations</code> (or anything you like)</li>
+<li>Set it to <strong>Public</strong> (required for free Netlify)</li>
+<li>Don't initialize with a README (you already have files)</li>
+<li>Click <strong>Create repository</strong></li>
+</ol>
+<p>GitHub will show you a set of commands. Open Terminal and run:</p>
+<pre><code class="language-bash">cd path/to/effective-hallucinations   # the folder you downloaded
+git init
+git add .
+git commit -m &quot;Initial site&quot;
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/effective-hallucinations.git
+git push -u origin main
+</code></pre>
+<h2>Step 2 — Connect to Netlify</h2>
+<ol>
+<li>Go to <a href="https://netlify.com">netlify.com</a> → <strong>Sign up</strong> (use your GitHub account)</li>
+<li>Click <strong>Add new site</strong> → <strong>Import an existing project</strong></li>
+<li>Choose <strong>GitHub</strong> → authorize → select your <code>effective-hallucinations</code> repo</li>
+<li>Leave all build settings blank (this is a plain HTML site)</li>
+<li>Click <strong>Deploy site</strong></li>
+</ol>
+<p>Your site will be live at a random <code>*.netlify.app</code> URL in about 30 seconds.</p>
+<h2>Step 3 — Connect your domain</h2>
+<ol>
+<li>In Netlify: go to <strong>Site configuration</strong> → <strong>Domain management</strong> → <strong>Add a domain</strong></li>
+<li>Enter <code>effectivehallucinations.com</code> → <strong>Verify</strong></li>
+<li>Netlify will give you nameservers (e.g. <code>dns1.p01.nsone.net</code>)</li>
+<li>Go to wherever you bought the domain → find <strong>Nameservers</strong> or <strong>DNS settings</strong></li>
+<li>Replace the existing nameservers with Netlify's</li>
+<li>Wait 10–30 minutes for DNS to propagate</li>
+</ol>
+<p>Netlify handles SSL automatically once DNS is live.</p>
+<h2>Step 4 — Publishing new posts</h2>
+<ol>
+<li>Copy <code>posts/_template.html</code> to <code>posts/your-slug.html</code></li>
+<li>Fill in the title, date, and conversation turns</li>
+<li>Add an entry to <code>index.html</code> (copy an existing <code>&lt;li&gt;</code> block)</li>
+<li>Run:<pre><code class="language-bash">git add .
+git commit -m &quot;Add: your post title&quot;
+git push
+</code></pre>
+</li>
+<li>Netlify auto-deploys in ~30 seconds — done.</li>
+</ol>
+<hr>
+<p>That's it. No build step, no dependencies, no monthly fees beyond the domain (~$12/year).</p>

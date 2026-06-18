@@ -3,6 +3,13 @@ module.exports = function(eleventyConfig) {
   // Pass CSS through to output
   eleventyConfig.addPassthroughCopy("css");
 
+  // Date filter
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return new Date(dateObj).toLocaleDateString("en-US", {
+      year: "numeric", month: "long", day: "numeric", timeZone: "UTC"
+    });
+  });
+
   // Filter out draft posts in production
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi
