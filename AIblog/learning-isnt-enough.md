@@ -33,3 +33,56 @@ The precise way to say it: there's a chain — sense/learn → decide → act. A
 One concrete suggestion for the page and the blog posts: lead with the response, demote learning to the setup. Something like — "Adaptive capacity is an organization's ability to act on what it learns: to change course intentionally when evidence and circumstances shift, rather than collect insight it can't use." That keeps learning in the picture but makes clear it's necessary, not sufficient — which is the actual argument.
 
 Worth deciding before you publish, because it changes the first sentence of post 1.
+
+**Mike:** Before you do that, I want us to figure out if there's a better, possibly shorter way of explaining this point — that it's not about learning, it's about acting on what you've learned. That feels unwieldy.
+
+**Claude:** Yeah, "acting on what you've learned" is accurate but clunky. Here are some tighter angles.
+
+The cleanest single contrast is knowing vs. doing: "It's not about knowing, it's about doing." Or: "Knowing isn't the hard part. Acting is."
+
+A few more, trading precision for punch:
+
+- "It's not learning. It's moving."
+- "The bottleneck isn't insight. It's action."
+- "Plenty of organizations know. Few can move."
+- "It's not about what you learn — it's whether you can act on it."
+- "Learning is cheap. Acting is hard."
+- "It's not the seeing. It's the steering." (steering carries both "change course" and "intentional," which fits adaptive capacity well)
+
+If you want one phrase that does the whole job, I'd reach for the gap between knowing and doing — it's a phrase people already feel in their bones ("knowing-doing gap" is even an established term from Pfeffer, which ties neatly to the principal-agent/resource lineage you're already using). So:
+
+"Adaptive capacity isn't about learning. It's about closing the gap between knowing and doing."
+
+Or the compressed version for a headline or first line:
+
+"It's not what you learn. It's whether you can act on it."
+
+My pick: "knowing vs. doing" as the conceptual frame, and "It's not what you learn, it's whether you can act on it" as the spoken-aloud line. Both are short, neither needs explaining, and they put the emphasis exactly where your argument wants it.
+
+**Mike:** Yep. Please do.
+
+**Claude:** Here are two test-drives of the opening, each carrying a different one of the candidate lines.
+
+**Version A — leads with "knowing vs. doing"**
+
+*Beyond "Data Maturity": The Real Question Isn't What You Know*
+
+Most nonprofits don't have a learning problem. They have a doing problem.
+
+Walk into almost any organization and you'll find evaluations, dashboards, reports, insights — knowledge piled up everywhere. What you won't find, often, is much evidence that any of it changed what the organization actually does. The gap isn't between ignorance and insight. It's between knowing and doing.
+
+That gap is what "data maturity" completely misses. For a decade the sector's data conversation has been organized around one idea: figure out where you sit on the ladder — ad hoc, emerging, developing, mastering — and climb. Funders commission the assessments, consultants sell the roadmaps, organizations dutifully score themselves. And it hasn't worked, because maturity measures how much you know, when the thing that actually matters is whether you can act on it.
+
+**Version B — leads with the spoken-aloud line**
+
+*Beyond "Data Maturity": It's Not What You Learn, It's Whether You Can Act on It*
+
+Here's the thing data maturity gets wrong in a single sentence: it's not what you learn, it's whether you can act on it.
+
+For the past decade, the nonprofit data conversation has been organized around one idea — data maturity. Assess where your organization sits on the ladder (ad hoc, emerging, developing, mastering) and climb. Funders commission the assessments. Consultants sell the roadmaps. Organizations dutifully score themselves.
+
+It hasn't worked. And the reason is that the whole model measures the wrong thing. It rewards organizations for getting better at knowing — more systems, more dashboards, more sophisticated analysis — when plenty of organizations already know far more than they can ever act on. The bottleneck was never insight. It's the ability to move.
+
+---
+
+My read: Version A is the stronger one. "Most nonprofits don't have a learning problem, they have a doing problem" is the most arresting first line of the bunch, and "the gap between knowing and doing" gives you a phrase you can reuse as a spine through all three posts. Version B's line is good but works better as a pull-quote than a title — it's a touch long in the header.
