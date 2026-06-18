@@ -1,7 +1,7 @@
 ---
 layout: layouts/aiblog-post.njk
 title: Welcome to Effective Hallucinations
-date: 2026-01-01
+date: 2026-06-08
 description: About Effective Hallucinations.
 ---
 
