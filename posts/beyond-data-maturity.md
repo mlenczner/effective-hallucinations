@@ -1,5 +1,5 @@
 ---
-title: "Beyond Data Maturity"
+title: "Blog Post 1: Beyond Data Maturity"
 date: 2026-06-10
 description: "Why the nonprofit sector should retire 'data maturity' and adopt 'adaptive capacity' as its organizing frame for data and learning."
 layout: layouts/post.njk

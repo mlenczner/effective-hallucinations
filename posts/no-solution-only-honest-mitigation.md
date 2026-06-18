@@ -1,5 +1,5 @@
 ---
-title: "No Solution, Only Honest Mitigation"
+title: "Blog Post 3: No Solution, Only Honest Mitigation"
 date: 2026-06-10
 description: "The structural problems facing nonprofit accountability don't have clean solutions. The honest move is to stop pretending they do — and work carefully within the constraint."
 layout: layouts/post.njk
