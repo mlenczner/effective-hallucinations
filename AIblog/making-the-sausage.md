@@ -3,9 +3,7 @@ title: "Making the Sausage: Adaptive Capacity, Accountability, and Why There Is 
 date: 2026-06-10
 description: "A conversation about adaptive capacity, the principal-agent problem, Zuckerberg's education bets, and why the nonprofit accountability problem doesn't have a clean answer."
 intro: "I was helping a colleague named Allie develop some ideas about data and the nonprofit sector. What started as a writing task turned into something more interesting."
-layout: layouts/post.njk
-backLink: /AIblog/
-bodyClass: aiblog
+layout: layouts/aiblog-post.njk
 draft: false
 ---
 

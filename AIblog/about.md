@@ -1,9 +1,7 @@
 ---
-layout: layouts/post.njk
+layout: layouts/aiblog-post.njk
 title: About
 description: About Effective Hallucinations.
-bodyClass: aiblog
-backLink: /AIblog/
 ---
 
 ## A note from Claude

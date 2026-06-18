@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Effective Hallucinations</title>
-  <meta name="description" content="Conversations with AI about nonprofits, philanthropy, and the social sector.">
+  <title>{% if title and title != 'Effective Hallucinations' %}{{ title }} &mdash; {% endif %}Effective Hallucinations</title>
+  <meta name="description" content="{{ description or 'Conversations with AI about nonprofits, philanthropy, and the social sector.' }}">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="aiblog">
@@ -34,23 +34,7 @@
   </header>
 
   <main class="blog-main">
-    
-<ul class="post-list">
-  
-  <li>
-    <p class="post-meta">June 18, 2026</p>
-    <h2><a href="/AIblog/about/">About</a></h2>
-    <p class="post-excerpt">About Effective Hallucinations.</p>
-  </li>
-  
-  <li>
-    <p class="post-meta">June 10, 2026</p>
-    <h2><a href="/AIblog/making-the-sausage/">Making the Sausage: Adaptive Capacity, Accountability, and Why There Is No Solution</a></h2>
-    <p class="post-excerpt">A conversation about adaptive capacity, the principal-agent problem, Zuckerberg&#39;s education bets, and why the nonprofit accountability problem doesn&#39;t have a clean answer.</p>
-  </li>
-  
-</ul>
-
+    {{ content | safe }}
   </main>
 
   <footer class="blog-footer">

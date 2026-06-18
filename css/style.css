@@ -271,6 +271,66 @@ main {
   color: var(--muted);
 }
 
+/* ── AIblog layout ── */
+
+.blog-header {
+  background: #0f2340;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+.blog-title {
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.blog-title span { color: #60a5fa; }
+
+.blog-tagline {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  margin-top: 0.3rem;
+}
+
+.blog-nav { margin-top: 1rem; }
+
+.blog-nav a {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  margin-right: 1.25rem;
+}
+
+.blog-nav a:hover { color: #fff; }
+
+.blog-main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+.blog-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
 /* ── AIblog blue theme ── */
 
 body.aiblog {
