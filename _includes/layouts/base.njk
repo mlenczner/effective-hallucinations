@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} &mdash; {% endif %}Effective Hallucinations</title>
+  <meta name="description" content="{{ description or 'Conversations with AI about nonprofits, philanthropy, and the social sector.' }}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="site-title" href="/">Effective <span>Hallucinations</span></a>
+    <p class="site-tagline">Conversations with AI about nonprofits, philanthropy, and the social sector.</p>
+    <nav>
+      <a href="/">Posts</a>
+      <a href="/about/">About</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <p>Effective Hallucinations &mdash; <a href="mailto:mlenczner@gmail.com" style="color:inherit">Mike Lenczner</a></p>
+  </footer>
+
+</body>
+</html>

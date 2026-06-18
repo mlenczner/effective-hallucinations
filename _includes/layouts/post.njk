@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<a class="back-link" href="/">&larr; Back</a>
+
+<div class="post-header">
+  <p class="post-meta">{{ date | date: "%B %-d, %Y" }}</p>
+  <h1>{{ title }}</h1>
+  {% if intro %}<p class="post-intro">{{ intro }}</p>{% endif %}
+</div>
+
+<div class="prose">
+  {{ content | safe }}
+</div>
