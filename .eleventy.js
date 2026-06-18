@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
     return collectionApi
       .getFilteredByGlob("AIblog/*.md")
       .filter(post => !post.data.draft)
-      .sort((a, b) => b.date - a.date);
+      .sort((a, b) => a.date - b.date);
   });
 
   // Transform: wrap **Mike:** / **Claude:** paragraphs into conversation turns
