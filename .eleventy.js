@@ -71,6 +71,9 @@ module.exports = function(eleventyConfig) {
       const speakerMatch = line.match(/^<p><strong>(Mike|Claude):<\/strong>\s*(.*)<\/p>$/);
       const isBreaker = /^<h[1-6][\s>]|^<hr/.test(line);
       const isParagraph = line.startsWith("<p>");
+      // List elements and blockquotes also belong inside a turn
+      const isListOrBlock = /^<\/?[uo]l[\s>]/.test(line) || /^<\/?li[\s>]/.test(line) || /^<\/?blockquote[\s>]/.test(line);
+      const isTurnContent = (isParagraph || isListOrBlock) && !isBreaker;
 
       if (speakerMatch) {
         const [, speaker, text] = speakerMatch;
@@ -81,8 +84,8 @@ module.exports = function(eleventyConfig) {
         }
         currentSpeaker = speaker;
         turnLines.push(`<p>${text}</p>`);
-      } else if (currentSpeaker && isParagraph && !isBreaker) {
-        // Continuation paragraph — belongs to current speaker's turn
+      } else if (currentSpeaker && isTurnContent) {
+        // Continuation content — belongs to current speaker's turn
         turnLines.push(line);
       } else if (isBreaker) {
         if (currentSpeaker && line.startsWith("<hr")) {
