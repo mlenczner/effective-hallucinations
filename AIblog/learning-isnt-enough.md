@@ -83,6 +83,5 @@ For the past decade, the nonprofit data conversation has been organized around o
 
 It hasn't worked. And the reason is that the whole model measures the wrong thing. It rewards organizations for getting better at knowing — more systems, more dashboards, more sophisticated analysis — when plenty of organizations already know far more than they can ever act on. The bottleneck was never insight. It's the ability to move.
 
----
 
 My read: Version A is the stronger one. "Most nonprofits don't have a learning problem, they have a doing problem" is the most arresting first line of the bunch, and "the gap between knowing and doing" gives you a phrase you can reuse as a spine through all three posts. Version B's line is good but works better as a pull-quote than a title — it's a touch long in the header.

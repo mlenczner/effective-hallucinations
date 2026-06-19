@@ -85,8 +85,14 @@ module.exports = function(eleventyConfig) {
         // Continuation paragraph — belongs to current speaker's turn
         turnLines.push(line);
       } else if (isBreaker) {
-        closeConversation();
-        output.push(line);
+        if (currentSpeaker && line.startsWith("<hr")) {
+          // <hr> inside a turn stays inside the bubble as a visual divider
+          turnLines.push(line);
+        } else {
+          // Headings and <hr> outside a turn close the conversation
+          closeConversation();
+          output.push(line);
+        }
       } else {
         if (currentSpeaker) closeConversation();
         output.push(line);
