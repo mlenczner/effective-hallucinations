@@ -438,7 +438,8 @@ main {
 /* ── AIblog layout ── */
 
 .blog-header {
-  background: #0f2340;
+  background: #1a2e2a;
+  border-bottom: 3px solid #3d9970;
   margin: 0;
   padding: 0;
 }
@@ -446,28 +447,29 @@ main {
 .blog-header-inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2rem 1.5rem 1.5rem;
+  padding: 2.25rem 1.5rem 1.75rem;
 }
 
 .blog-title {
   font-family: var(--font-sans);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   text-decoration: none;
   color: #fff;
 }
 
-.blog-title span { color: #60a5fa; }
+.blog-title span { color: #7dd3b0; }
 
 .blog-tagline {
   font-family: var(--font-sans);
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.55);
-  margin-top: 0.3rem;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.65);
+  margin-top: 0.4rem;
+  font-style: italic;
 }
 
-.blog-nav { margin-top: 1rem; }
+.blog-nav { margin-top: 1.1rem; }
 
 .blog-nav a {
   font-family: var(--font-sans);
@@ -477,7 +479,7 @@ main {
   margin-right: 1.25rem;
 }
 
-.blog-nav a:hover { color: #fff; }
+.blog-nav a:hover { color: #7dd3b0; }
 
 .blog-main {
   max-width: var(--max-width);
@@ -495,21 +497,55 @@ main {
   color: var(--muted);
 }
 
-/* ── AIblog blue theme ── */
+/* ── AIblog warm theme ── */
 
 body.aiblog {
-  --accent: #2563eb;
-  --accent-light: #eff6ff;
-  background: #f0f2f7;
+  --accent: #2b7a5f;
+  --accent-light: #e0eeea;
+  background: #f6f3ee;
 }
 
 body.aiblog .blog-main {
   background: transparent;
 }
 
-body.aiblog .prose a { color: #2563eb; }
-body.aiblog .post-list h2 a:hover { color: #2563eb; }
-body.aiblog .back-link:hover { color: #2563eb; }
+body.aiblog .prose a { color: #2b7a5f; }
+body.aiblog .back-link:hover { color: #2b7a5f; }
+
+/* Warmer chat bubbles for aiblog */
+body.aiblog .mike-turn .turn-bubble {
+  background: #edeae2;
+}
+
+body.aiblog .claude-turn .turn-bubble {
+  background: #deeee8;
+}
+
+body.aiblog .turn-bubble a { color: #2b7a5f; }
+
+/* Card-style post list for aiblog index */
+body.aiblog .post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+body.aiblog .post-list li {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(0,0,0,0.09);
+  border-bottom: 1px solid rgba(0,0,0,0.09);
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color 0.15s;
+}
+
+body.aiblog .post-list li:first-child { padding-top: 1.25rem; }
+
+body.aiblog .post-list li:hover {
+  border-color: #2b7a5f;
+}
+
+body.aiblog .post-list h2 a:hover { color: #2b7a5f; }
 
 /* ── Responsive ── */
 
